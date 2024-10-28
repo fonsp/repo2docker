@@ -62,7 +62,7 @@ class JuliaProjectTomlBuildPack(PythonBuildPack):
             #        clarify the desired behavior and have a unit test of
             #        find_semver_match to validate it.
             #
-            compat = "1.6"
+            compat = "1.10"
 
         match = find_semver_match(compat, self.all_julias)
         if match is None:
